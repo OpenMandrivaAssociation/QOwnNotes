@@ -100,7 +100,6 @@ Translations files for %{name}.
  
 %install
 %make_install
-install -m 0644 -Dp obs/%{name}.appdata.xml %{buildroot}/%{_metainfodir}/%{name}.appdata.xml
 %find_lang %{name} --with-qt
 
  

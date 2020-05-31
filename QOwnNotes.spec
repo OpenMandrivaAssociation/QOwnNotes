@@ -87,6 +87,4 @@ Translations files for %{name}.
 #{_metainfodir}/*.xml
  
 %files translations
-%{_datadir}/qt5/translations/%{appname}_ceb.qm
-%{_datadir}/qt5/translations/%{appname}_fil.qm
-%{_datadir}/qt5/translations/%{appname}_hil.qm
+%{_datadir}/qt5/translations/%{appname}_*

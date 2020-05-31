@@ -86,7 +86,7 @@ Translations files for %{name}.
 %{_datadir}/icons/hicolor/scalable/*/*.svg
 #{_metainfodir}/*.xml
  
-%files -f %{appname}.lang translations
+%files translations
 %{_datadir}/qt5/translations/%{appname}_ceb.qm
 %{_datadir}/qt5/translations/%{appname}_fil.qm
 %{_datadir}/qt5/translations/%{appname}_hil.qm

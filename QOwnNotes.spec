@@ -5,19 +5,6 @@ Name:           qownnotes
 Version:        20.5.13
 Release:        1
 Summary:        QOwnNotes is a plain-text file notepad and todo-list manager with markdown support and ownCloud / Nextcloud integration.
- 
-# The entire source code is MIT except bundled libs:
-# BSD:          qdarkstyle
-#               qkeysequencewidget
-#               qmarkdowntextedit
-#               singleapplication
-#               simplecrypt
-# MIT:          piwiktracker
-#               md4c
-# GPLv2         versionnumber
-# GPLv3+        qttoolbareditor
-# LGPLv2+       fakevim
-# ASL 2.0       diff_match_patch
 License:        MIT and BSD and GPLv2 and GPLv3+ and LGPLv2+ and ASL 2.0
 URL:            https://www.qownnotes.org
 
@@ -43,16 +30,6 @@ BuildRequires:  pkgconfig(appstream-glib)
  
 Requires:       hicolor-icon-theme
 Recommends:     %{name}-translations = %{version}-%{release}
- 
-Provides:       bundled(fakevim) = 0.0.1
-Provides:       bundled(md4c) = 0.4.2~git%{md4c_shortcommit}
-Provides:       bundled(qhotkey) = 1.3.0~git%{qhotkey_commit}
-Provides:       bundled(qkeysequencewidget) = 1.0.1
-Provides:       bundled(qmarkdowntextedit) = 2019.4.0~git%{qmarkdowntextedit_shortcommit}
-Provides:       bundled(qt-piwik-tracker) = 0~git%{piwiktracker_shortcommit}
-Provides:       bundled(qt-toolbar-editor) = 0~git%{qttoolbareditor_shortcommit}
-Provides:       bundled(qtcsv) = 1.2.2
-
  
 %description
 QOwnNotes is the open source notepad with markdown support and todo list manager
@@ -86,7 +63,6 @@ Translations files for %{name}.
 %prep
 %autosetup -n %{name}-%{version}
  
- 
 %build
 # Build translations
 # * https://github.com/pbek/QOwnNotes/issues/1744
@@ -100,9 +76,6 @@ Translations files for %{name}.
  
 %install
 %make_install
-%find_lang %{name} --with-qt
-
- 
  
 %files
 %license LICENSE

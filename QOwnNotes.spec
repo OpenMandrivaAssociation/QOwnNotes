@@ -95,11 +95,11 @@ Translations files for %{name}.
 %qmake_qt5 \
     PREFIX=%{buildroot}%{_prefix} \
     
-%make_build -C
+%make_build
  
  
 %install
-%make_install -C
+%make_install
 install -m 0644 -Dp obs/%{name}.appdata.xml %{buildroot}/%{_metainfodir}/%{name}.appdata.xml
 %find_lang %{name} --with-qt
 

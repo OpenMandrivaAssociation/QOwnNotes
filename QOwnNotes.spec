@@ -84,7 +84,7 @@ Translations files for %{name}.
 %{_datadir}/applications/*.desktop
 %{_datadir}/icons/hicolor/*/*/*.png
 %{_datadir}/icons/hicolor/scalable/*/*.svg
-%{_metainfodir}/*.xml
+#{_metainfodir}/*.xml
  
 %files -f %{appname}.lang translations
 %{_datadir}/qt5/translations/%{appname}_ceb.qm

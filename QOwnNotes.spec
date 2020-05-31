@@ -88,7 +88,7 @@ Translations files for %{name}.
 %build
 # Build translations
 # * https://github.com/pbek/QOwnNotes/issues/1744
-lrelease-qt5 src/%{name}.pro
+#lrelease-qt5 src/%{name}.pro
  
 %qmake_qt5 \
     PREFIX=%{buildroot}%{_prefix} \

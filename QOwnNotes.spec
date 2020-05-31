@@ -23,6 +23,7 @@ URL:            https://www.qownnotes.org
 
 Source0:        https://download.tuxfamily.org/qownnotes/src/%{name}-%{version}.tar.xz
 
+BuildRequires:  qmake5
 BuildRequires:  cmake
 BuildRequires:  cmake(Qt5Concurrent)
 BuildRequires:  cmake(Qt5)

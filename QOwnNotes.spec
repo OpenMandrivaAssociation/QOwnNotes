@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 %global appname QOwnNotes
 %global url1    https://github.com/pbek
  

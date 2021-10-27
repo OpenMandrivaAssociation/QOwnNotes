@@ -4,7 +4,7 @@
 %global url1    https://github.com/pbek
  
 Name:           qownnotes
-Version:        21.8.9
+Version:        21.10.14
 Release:        1
 Summary:        QOwnNotes is a plain-text file notepad and todo-list manager with markdown support and ownCloud / Nextcloud integration.
 License:        MIT and BSD and GPLv2 and GPLv3+ and LGPLv2+ and ASL 2.0

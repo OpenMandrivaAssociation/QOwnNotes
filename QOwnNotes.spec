@@ -5,7 +5,7 @@
  
 Name:           qownnotes
 Version:        23.3.3
-Release:        1
+Release:        2
 Summary:        QOwnNotes is a plain-text file notepad and todo-list manager with markdown support and ownCloud / Nextcloud integration.
 License:        MIT and BSD and GPLv2 and GPLv3+ and LGPLv2+ and ASL 2.0
 URL:            https://www.qownnotes.org

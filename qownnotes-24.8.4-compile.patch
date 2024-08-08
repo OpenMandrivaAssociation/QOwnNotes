@@ -1,0 +1,13 @@
+diff -up qownnotes-24.8.4/libraries/botan/botan.cpp.omv~ qownnotes-24.8.4/libraries/botan/botan.cpp
+--- qownnotes-24.8.4/libraries/botan/botan.cpp.omv~	2024-08-08 16:42:45.042056192 +0200
++++ qownnotes-24.8.4/libraries/botan/botan.cpp	2024-08-08 16:42:52.930143643 +0200
+@@ -7,6 +7,9 @@
+ 
+ #include "botan.h"
+ #include "botan_internal.h"
++#ifdef __x86_64__
++#include <cpuid.h>
++#endif
+ 
+ /*
+ * AES

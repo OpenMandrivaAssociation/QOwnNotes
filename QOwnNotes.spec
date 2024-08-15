@@ -5,7 +5,7 @@
  
 Name:           qownnotes
 Version:        24.8.5
-Release:        1
+Release:        2
 Summary:        QOwnNotes is a plain-text file notepad and todo-list manager with markdown support and ownCloud / Nextcloud integration.
 License:        MIT and BSD and GPLv2 and GPLv3+ and LGPLv2+ and ASL 2.0
 URL:            https://www.qownnotes.org
@@ -13,22 +13,22 @@ URL:            https://www.qownnotes.org
 Source0:        https://github.com/pbek/QOwnNotes/releases/download/v%{version}/qownnotes-%{version}.tar.xz
 #Source0:        https://download.tuxfamily.org/qownnotes/src/%{name}-%{version}.tar.xz
 
-BuildRequires:  qmake5
+BuildRequires:  qmake-qt6
 BuildRequires:  cmake
-BuildRequires:  cmake(Qt5Concurrent)
-BuildRequires:  cmake(Qt5)
-BuildRequires:  cmake(Qt5Core)
-BuildRequires:  cmake(Qt5DBus)
-BuildRequires:  cmake(Qt5LinguistTools)
-BuildRequires:  cmake(Qt5Multimedia)
-BuildRequires:  cmake(Qt5PrintSupport)
-BuildRequires:  cmake(Qt5Sql)
-BuildRequires:  cmake(Qt5Svg)
-BuildRequires:  cmake(Qt5Qml)
-BuildRequires:  cmake(Qt5WebSockets)
-BuildRequires:  cmake(Qt5X11Extras)
-BuildRequires:  cmake(Qt5Xml)
-BuildRequires:  cmake(Qt5XmlPatterns)
+BuildRequires:  cmake(Qt6Concurrent)
+BuildRequires:  cmake(Qt6)
+BuildRequires:  cmake(Qt6Core)
+BuildRequires:  cmake(Qt6DBus)
+BuildRequires:  cmake(Qt6LinguistTools)
+BuildRequires:  cmake(Qt6Multimedia)
+BuildRequires:  cmake(Qt6PrintSupport)
+BuildRequires:  cmake(Qt6Sql)
+BuildRequires:  cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6WebSockets)
+#BuildRequires:  cmake(Qt5X11Extras)
+BuildRequires:  cmake(Qt6Xml)
+#BuildRequires:  cmake(Qt6XmlPatterns)
 BuildRequires:  pkgconfig(appstream-glib)
  
 Requires:       hicolor-icon-theme
@@ -74,7 +74,7 @@ Translations files for %{name}.
 # * https://github.com/pbek/QOwnNotes/issues/1744
 #lrelease-qt5 src/%{name}.pro
  
-%qmake_qt5 \
+qmake-qt6 \
     PREFIX=%{buildroot}%{_prefix} \
     
 %make_build
@@ -93,4 +93,4 @@ Translations files for %{name}.
 #{_metainfodir}/*.xml
  
 %files translations
-%{_datadir}/qt5/translations/%{appname}_*
+%{_datadir}/qt6/translations/%{appname}_*

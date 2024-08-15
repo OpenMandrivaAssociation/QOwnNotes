@@ -93,4 +93,4 @@ qmake-qt6 \
 #{_metainfodir}/*.xml
  
 %files translations
-%{_datadir}/qt5/translations/%{appname}_*
+#{_datadir}/qt5/translations/%{appname}_*

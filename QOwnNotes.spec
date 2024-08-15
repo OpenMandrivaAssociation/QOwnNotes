@@ -28,7 +28,7 @@ BuildRequires:  cmake(Qt6Qml)
 BuildRequires:  cmake(Qt6WebSockets)
 #BuildRequires:  cmake(Qt5X11Extras)
 BuildRequires:  cmake(Qt6Xml)
-BuildRequires:  cmake(Qt6XmlPatterns)
+#BuildRequires:  cmake(Qt6XmlPatterns)
 BuildRequires:  pkgconfig(appstream-glib)
  
 Requires:       hicolor-icon-theme

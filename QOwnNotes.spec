@@ -30,6 +30,7 @@ BuildRequires:  cmake(Qt6WebSockets)
 BuildRequires:  cmake(Qt6Xml)
 #BuildRequires:  cmake(Qt6XmlPatterns)
 BuildRequires:  pkgconfig(appstream-glib)
+BuildRequires:  pkgconfig(botan-3)
  
 Requires:       hicolor-icon-theme
 Recommends:     %{name}-translations = %{version}-%{release}
@@ -76,7 +77,7 @@ Translations files for %{name}.
  
 qmake-qt6 \
     PREFIX=%{buildroot}%{_prefix} \
-    -DBUILD_WITH_SYSTEM_BOTAN=ON
+    USE_SYSTEM_BOTAN=1            \
     
 %make_build
  

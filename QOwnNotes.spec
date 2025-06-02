@@ -35,7 +35,7 @@ Requires:       hicolor-icon-theme
 Recommends:     %{name}-translations = %{version}-%{release}
 
 %patchlist
-qownnotes-24.8.4-compile.patch
+#qownnotes-24.8.4-compile.patch
  
 %description
 QOwnNotes is the open source notepad with markdown support and todo list manager

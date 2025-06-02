@@ -71,6 +71,7 @@ Translations files for %{name}.
 %autosetup -n %{name}-%{version} -p1
  
 %build
+export CXXFLAGS="%{optflags} -std=c++20"
 # Build translations
 # * https://github.com/pbek/QOwnNotes/issues/1744
 #lrelease-qt5 src/%{name}.pro

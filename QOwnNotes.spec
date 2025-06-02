@@ -76,6 +76,7 @@ Translations files for %{name}.
  
 qmake-qt6 \
     PREFIX=%{buildroot}%{_prefix} \
+    -DBUILD_WITH_SYSTEM_BOTAN=ON
     
 %make_build
  

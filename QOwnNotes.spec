@@ -24,12 +24,12 @@ BuildRequires:  cmake(Qt6Multimedia)
 BuildRequires:  cmake(Qt6PrintSupport)
 BuildRequires:  cmake(Qt6Sql)
 BuildRequires:  cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6Quick)
 BuildRequires:  cmake(Qt6Qml)
 BuildRequires:  cmake(Qt6WebSockets)
-#BuildRequires:  cmake(Qt5X11Extras)
 BuildRequires:  cmake(Qt6Xml)
-#BuildRequires:  cmake(Qt6XmlPatterns)
 BuildRequires:  pkgconfig(appstream-glib)
+BuildRequires:  pkgconfig(libsecret-1)
  
 Requires:       hicolor-icon-theme
 Recommends:     %{name}-translations = %{version}-%{release}

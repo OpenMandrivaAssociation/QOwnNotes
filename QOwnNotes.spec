@@ -13,6 +13,7 @@ URL:            https://www.qownnotes.org
 Source0:        https://github.com/pbek/QOwnNotes/releases/download/v%{version}/qownnotes-%{version}.tar.xz
 #Source0:        https://download.tuxfamily.org/qownnotes/src/%{name}-%{version}.tar.xz
 
+BuildRequires:  make
 BuildRequires:  qmake-qt6
 BuildRequires:  cmake
 BuildRequires:  cmake(Qt6Concurrent)
